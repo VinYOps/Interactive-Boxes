@@ -1,0 +1,39 @@
+.box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: height 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .box.expanded {
+    height: 200px;
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .box.expanded .options {
+    display: block;
+  }
+  
+  .color-option, .size-option {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
